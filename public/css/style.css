@@ -1,0 +1,227 @@
+
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100vw;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.currentWeather {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.searchBar__button {
+    width: 48px;
+    height: 48px;
+    outline: none;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.searchBar__button:hover {
+    cursor: pointer;
+}
+
+/* .slick-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.slick-track{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    cursor: grab;
+
+}
+
+.slick-active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.slick-cloned h1 {
+    font-size: 1rem;
+} */
+
+/* .slick-cloned i {
+    font-size: 2rem;
+}
+
+.slick-cloned h2 {
+    font-size: 2rem;
+} */
+
+.daily {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.daily .dailyWeather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.daily .dailyWeather .myDayW {
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+
+.daily .dailyWeather .dailyDetails {
+    visibility: visible;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+
+.daily .dailyWeather .dailyDetails.hiddenDrop {
+    display: none;
+}
+
+.daily .dailyWeather h1 {
+    font-size: 1rem;
+}
+
+.daily .dailyWeather h2 {
+    font-size: 2rem;
+}
+
+.daily .dailyWeather i {
+    font-size: 2rem;
+}
+
+.searchLoc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 500px;
+    border: 2px solid white;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.searchLoc input {
+    flex-grow: 1;
+    width: calc(100% - 52px);
+    border: none;
+    border-radius: 500px;
+    outline: none;
+    padding: 0.75rem 0;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.searchLoc .searchBar__button {
+    border: none;
+}
+
+.searchLoc .searchBar__button i {
+    font-size: 1.5rem;
+}
+
+.location {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.currentTemp {
+    font-size: 5rem;
+}
+
+.sun {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    padding: 3rem 0;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.sun h1 {
+    font-size: 1rem;
+}
+
+.sun h2 {
+    font-size: 2.25rem;
+}
+
+.sun .wi {
+    font-size: 3rem;
+}
+
+.currentDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.currentDetails i {
+    font-size: 2.5rem;
+}
+
+.currentDetails h1 {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.autocomplete-dropdown-container{
+    font-size: 1.5rem;
+}
+
+.suggestion-item--active{
+    background-color: rgba(124, 116, 135, 0.5);
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
