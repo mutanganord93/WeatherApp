@@ -3,7 +3,7 @@ import { useFetch } from "./fetchData";
 
 const CurrentW = (props) => {
   const { loading, data } = useFetch(
-    `http://localhost:5000/weather?lat=${props.coordinates.lat}&lon=${props.coordinates.lng}`
+    `https://weatheappdesignapi.onrender.com/weather?lat=${props.coordinates.lat}&lon=${props.coordinates.lng}`
   );
   props.setData(()=> {return data});
   props.setLoading(()=>{return loading});
